@@ -7,7 +7,7 @@ now = datetime.now()
 thetxt = open('C:/Users/noahu/Desktop/py-projects/theattender/form_fill.txt')
 lineread = thetxt.readlines()
 
-chromedriver_location = "c:/Users/noahu/Desktop/py-projects/theattender/chromedriver.exe"
+chromedriver_location = str(lineread[5])
 
 driver = webdriver.Chrome(chromedriver_location)
 driver.get("https://forms.office.com/Pages/ResponsePage.aspx?id=XYl7mAJPm0i5TUkXBGnu90WQw_c63PZOtGrFHbAgXFNUNFFZMkxJT0FBRlMxTVpMVTBDUU1LWDZCUy4u")
