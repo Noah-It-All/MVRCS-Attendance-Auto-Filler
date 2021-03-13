@@ -2,5 +2,5 @@
 lank
 dank
 3
-;sdja;jdsl
+hybrid
 c:/Users/noahu/Desktop/py-projects/theattender/chromedriver.exe
