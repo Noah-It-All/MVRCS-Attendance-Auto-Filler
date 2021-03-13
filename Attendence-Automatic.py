@@ -2,12 +2,12 @@ from selenium import webdriver
 from time import sleep
 from datetime import datetime
 import tkinter as tk
+import getpass
 
-now = datetime.now()
+now = datetime.now() # Get The Time
+username = getpass.getuser() # Get Username
 
-
-#
-thetxt = open('C:/Users/noahu/Desktop/py-projects/theattender/form_fill.txt')
+thetxt = open('c:/users/' + str(username) + '/desktop/fill.txt') # Grab config file
 
 
 
