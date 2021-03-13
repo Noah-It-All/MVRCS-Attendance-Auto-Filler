@@ -8,7 +8,6 @@ now = datetime.now() # Get The Time
 username = getpass.getuser() # Get Username
 thetxt = open('c:/users/' + str(username) + '/desktop/fill.txt') # Grab config file
 
-
 lineread = thetxt.readlines()
 
 chromedriver_location = str(lineread[5])
