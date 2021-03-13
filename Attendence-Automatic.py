@@ -7,7 +7,7 @@ now = datetime.now()
 
 
 #
-thetxt = open('C:/Users/noahu/Desktop/py-projects/theattender/form_fill.txt')
+thetxt = open('%USERPROFILE%/desktop/fill.txt')
 
 
 
