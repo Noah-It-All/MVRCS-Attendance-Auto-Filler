@@ -2,9 +2,12 @@ from selenium import webdriver
 from time import sleep
 from datetime import datetime
 import tkinter as tk
+import getpass
 
-now = datetime.now()
-thetxt = open('C:/Users/noahu/Desktop/py-projects/theattender/form_fill.txt')
+now = datetime.now() # Get The Time
+username = getpass.getuser() # Get Username
+thetxt = open('c:/users/' + str(username) + '/desktop/fill.txt') # Grab config file
+
 lineread = thetxt.readlines()
 
 chromedriver_location = str(lineread[5])
