@@ -7,7 +7,7 @@ now = datetime.now()
 thetxt = open('C:/Users/noahu/Desktop/py-projects/theattender/form_fill.txt')
 lineread = thetxt.readlines
 
-chromedriver_location = str(lineread[5])
+chromedriver_location = lineread[5]
 
 driver = webdriver.Chrome(chromedriver_location)
 driver.get("https://forms.office.com/Pages/ResponsePage.aspx?id=XYl7mAJPm0i5TUkXBGnu90WQw_c63PZOtGrFHbAgXFNUNFFZMkxJT0FBRlMxTVpMVTBDUU1LWDZCUy4u")
@@ -44,13 +44,13 @@ driver.find_element_by_xpath(first_name_input).send_keys(first_name)
 driver.find_element_by_xpath(Last_Name_Input).send_keys(Last_Name)
 driver.find_element_by_xpath(drop_down_opener).click() #open drop down
 driver.find_element_by_xpath(grade_clicker).click() #click grade 6
-if lineread[4] == "remote":
+if lineread[6] == "remote":
     driver.find_element_by_xpath(remote_learning_clicker).click()
 else:
-    if lineread[4] == "hybrid":
+    if lineread[6] == "hybrid":
         driver.find_element_by_xpath(hybrid_learning_clicker).click()
     else:
-        if lineread[4] == "inperson":
+        if lineread[6] == "inperson":
             driver.find_element_by_xpath(inperson_learning_clicker).click()
         else:
             driver.quit
