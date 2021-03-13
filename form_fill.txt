@@ -1,6 +1,0 @@
-354558
-Noah
-Henok
-6
-remote
-c:/Users/noahu/Desktop/py-projects/theattender/chromedriver.exe
