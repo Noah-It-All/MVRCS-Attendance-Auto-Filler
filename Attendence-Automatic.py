@@ -5,7 +5,7 @@ import tkinter as tk
 
 now = datetime.now()
 thetxt = open('C:/Users/noahu/Desktop/py-projects/theattender/form_fill.txt')
-lineread = thetxt.readlines
+lineread = thetxt.readlines()
 
 chromedriver_location = str(lineread[5])
 
