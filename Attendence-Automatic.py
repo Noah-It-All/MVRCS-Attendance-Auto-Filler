@@ -2,15 +2,15 @@ from selenium import webdriver
 from time import sleep
 from datetime import datetime
 import tkinter as tk
-import getpass
+from getpass import getuser
 
-now = datetime.now() # Get The Time
-username = getpass.getuser() # Get Username
-thetxt = open('c:/users/' + str(username) + '/desktop/fill.txt') # Grab config file
+username = getuser()
 
+now = datetime.now()
+thetxt = open("C:/Users/" + username + "/Desktop/m-config/fill.txt")
 lineread = thetxt.readlines()
+chromedriver_location = "C:/Users/" + username + "/Desktop/m-config/chromedriver.exe"
 
-chromedriver_location = str(lineread[5])
 
 driver = webdriver.Chrome(chromedriver_location)
 driver.get("https://forms.office.com/Pages/ResponsePage.aspx?id=XYl7mAJPm0i5TUkXBGnu90WQw_c63PZOtGrFHbAgXFNUNFFZMkxJT0FBRlMxTVpMVTBDUU1LWDZCUy4u")
@@ -47,23 +47,24 @@ driver.find_element_by_xpath(first_name_input).send_keys(first_name)
 driver.find_element_by_xpath(Last_Name_Input).send_keys(Last_Name)
 driver.find_element_by_xpath(drop_down_opener).click() #open drop down
 driver.find_element_by_xpath(grade_clicker).click() #click grade 6
+if lineread[4] == "remote" or "hybrid" or "inperson":
+    print("You chose " + str(lineread[4]))
+else:
+    root = tk.Tk()
+    T = tk.Text(root, height=15, width=30)
+    T.pack()
+    T.insert(tk.END, str(lineread[4]) + " isn't an option the options are\nhybrid inperson and remote\n")
+    tk.mainloop()
+
 if lineread[4] == "remote":
     driver.find_element_by_xpath(remote_learning_clicker).click()
-else:
-    if lineread[4] == "hybrid":
-        driver.find_element_by_xpath(hybrid_learning_clicker).click()
-    else:
-        if lineread[4] == "inperson":
-            driver.find_element_by_xpath(inperson_learning_clicker).click()
-        else:
-            driver.quit
-            root = tk.Tk()
-            T = tk.Text(root, height=5, width=30)
-            T.pack()
-            T.configure(font=("Arial", 16, "bold"))
-            T.insert(tk.END, "You Haven't chosen a learning type yet!\nThe options for learning types ares\nremote, hybrid or inperson\n")
-            tk.mainloop()
-            driver.quit
+
+if lineread[4] == "hybrid":
+     driver.find_element_by_xpath(hybrid_learning_clicker).click()
+
+if lineread[4] == "inperson":
+     driver.find_element_by_xpath(inperson_learning_clicker).click()
+
 driver.find_element_by_xpath(im_in_attendence).click() #click i am in attendence
 driver.find_element_by_xpath(im_available).click() #click i am available
 driver.find_element_by_xpath(submit_button).click() #submit
@@ -72,6 +73,6 @@ driver.quit()
 root = tk.Tk()
 T = tk.Text(root, height=15, width=30)
 T.pack()
-T.insert(tk.END, "made by noah henok")
+T.insert(tk.END, "you chose:\n Powerschool Id: " + str(lineread[0]) + "\n First Name: " + str(lineread[1]) + "\n" + " Last Name: " + str(lineread[2]) + "\n Grade: " + str(lineread[3]) + "\n Date" + str(ledate))
 tk.mainloop()
 
