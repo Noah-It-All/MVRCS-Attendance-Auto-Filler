@@ -1,2 +1,4 @@
-# MVRCS-Attendance-Auto-Filler
+# The MVRCS-Attendance-Auto-Filler
+
+*Made by Noah Henok*
 
