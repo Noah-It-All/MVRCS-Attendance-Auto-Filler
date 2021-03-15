@@ -25,4 +25,31 @@ Step 6. Drag the file called `chromedriver` from the folder you just downloaded 
 
 ### How to fill in the `fill.txt`
 
-Step 1.
+Step 1. Open the `fill.txt`
+
+
+Step 2. In the first line write your Powerschool ID (Thats the number you use to sign in to powerschool)
+
+
+Step 3. In the second line write your First Name
+
+
+Step 4. In the third line write your Last Name
+
+
+Step 5. In the fourth line write your grade (If you're in kindergarten just write 0)
+
+
+Step 6. In the fifth line write what type of learning you're doing (The options are `remote` `hybrid` or `inperson` make sure to keep it all lowercase)
+
+
+Step 7. Click [this](https://github.com/Noah-It-All/MVRCS-Attendance-Auto-Filler/releases/download/1.0/Attendance.exe) to download the script.
+
+
+Step 8. To run just open the exe in file explorer and double click it to run!
+
+
+## If chrome gives you this error dont panic
+![image of error](https://i.imgur.com/g2MWmHr.png)
+
+**Just click the little arrow then click keep**
