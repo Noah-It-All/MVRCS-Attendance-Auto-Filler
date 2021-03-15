@@ -26,7 +26,7 @@ Step 5. Drag the file called `chromedriver` from the folder you just downloaded 
 Step 1. Open the `fill.txt`
 
 
-Step 2. In the first line write your Powerschool ID (Thats the number you use to sign in to powerschool)
+Step 2. In the first line write your 6 Digit Powerschool ID (Thats the number you use to sign in to powerschool)
 
 
 Step 3. In the second line write your First Name
