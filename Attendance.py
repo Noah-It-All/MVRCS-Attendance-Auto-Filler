@@ -27,16 +27,7 @@ first_name = lineread[1]
 Last_Name_Input = '/html/body/div/div/div/div/div/div/div[1]/div[3]/div[2]/div[4]/div/div[2]/div/div/input'
 Last_Name = lineread[2]
 
-print(int(lineread[3]))
-
-sleep(30)
-
-try:
-    int(lineread[3])
-
-intversion = int(lineread[3])
-
-
+thegradestring = int(lineread[3]) + 1
 
 drop_down_opener = '/html/body/div/div/div/div/div/div/div[1]/div[3]/div[2]/div[5]/div/div[2]/div/div'
 grade_clicker = '//*[@id="Select_0"]/ul/li[' + str(thegradestring) + ']'
