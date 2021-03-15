@@ -23,6 +23,6 @@ Step 6. Drag the file called `chromedriver` from the folder you just downloaded 
 **Great! now that we've setup the folder lets fill in the `fill.txt` you just made**
 
 
-### How to fill in the fill.txt
+### How to fill in the `fill.txt`
 
 Step 1.
