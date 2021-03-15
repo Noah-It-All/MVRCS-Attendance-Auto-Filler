@@ -11,6 +11,50 @@ thetxt = open("C:/Users/" + username + "/Desktop/m-config/fill.txt")
 lineread = thetxt.readlines()
 chromedriver_location = "C:/Users/" + username + "/Desktop/m-config/chromedriver.exe"
 
+try:
+    int(lineread[0])
+except ValueError:
+    root = tk.Tk()
+    T = tk.Text(root, height=15, width=30)
+    T.pack()
+    T.insert(tk.END, "Your powerschool ID must \nbe in the form of a number")
+    tk.mainloop()
+    sleep(15)
+    quit()
+
+if int(len(str(lineread[0]))) - 1 == 6:
+    print("")
+else:
+    root = tk.Tk()
+    T = tk.Text(root, height=15, width=30)
+    T.pack()
+    T.insert(tk.END, "Your powerschool ID is \neither too long or too short")
+    tk.mainloop()
+    sleep(15)
+    quit()
+
+
+try:
+    int(lineread[3])
+except ValueError:
+    root = tk.Tk()
+    T = tk.Text(root, height=15, width=30)
+    T.pack()
+    T.insert(tk.END, "Your grade must be in \nthe form of a number")
+    tk.mainloop()
+    sleep(15)
+    quit()
+
+if lineread[4] == "remote" or "hybrid" or "inperson":
+    print("You chose " + str(lineread[4]))
+else:
+    root = tk.Tk()
+    T = tk.Text(root, height=15, width=30)
+    T.pack()
+    T.insert(tk.END, str(lineread[4]) + " isn't an option the options are\nhybrid inperson and remote\n")
+    tk.mainloop()
+    sleep(15)
+    quit()
 
 driver = webdriver.Chrome(chromedriver_location)
 driver.get("https://forms.office.com/Pages/ResponsePage.aspx?id=XYl7mAJPm0i5TUkXBGnu90WQw_c63PZOtGrFHbAgXFNUNFFZMkxJT0FBRlMxTVpMVTBDUU1LWDZCUy4u")
@@ -47,14 +91,6 @@ driver.find_element_by_xpath(first_name_input).send_keys(first_name)
 driver.find_element_by_xpath(Last_Name_Input).send_keys(Last_Name)
 driver.find_element_by_xpath(drop_down_opener).click() #open drop down
 driver.find_element_by_xpath(grade_clicker).click() #click grade 6
-if lineread[4] == "remote" or "hybrid" or "inperson":
-    print("You chose " + str(lineread[4]))
-else:
-    root = tk.Tk()
-    T = tk.Text(root, height=15, width=30)
-    T.pack()
-    T.insert(tk.END, str(lineread[4]) + " isn't an option the options are\nhybrid inperson and remote\n")
-    tk.mainloop()
 
 if lineread[4] == "remote":
     driver.find_element_by_xpath(remote_learning_clicker).click()
