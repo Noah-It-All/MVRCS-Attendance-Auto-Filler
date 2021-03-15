@@ -2,4 +2,4 @@
 
 *Made by Noah Henok*
 
-This is a script created for the purpose of [google.com](whatever)
+This is a script created for the purpose of automating the Attendance form
