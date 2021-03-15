@@ -47,6 +47,15 @@ Step 7. Click [this](https://github.com/Noah-It-All/MVRCS-Attendance-Auto-Filler
 Step 8. To run just open the exe in file explorer and double click it to run!
 
 
+```
+673456
+John
+Smith
+4
+hybrid
+```
+
+
 ## If chrome gives you this error dont panic
 ![image of error](https://i.imgur.com/g2MWmHr.png)
 
