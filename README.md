@@ -62,4 +62,4 @@ hybrid
 **Just click the little arrow then click keep**
 
 
-To see the list of antivirus systems that this has been deemed safe by go (here)[antivirus.md]
+To see the list of antivirus systems that this has been deemed safe by go (here)[/antivirus.md]
