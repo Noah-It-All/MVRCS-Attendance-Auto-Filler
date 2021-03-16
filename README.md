@@ -56,10 +56,12 @@ hybrid
 ```
 
 
-## If chrome gives you this error dont panic
+## If you get these errors dont panic.
 ![image of error](https://i.imgur.com/g2MWmHr.png)
 
 **Just click the little arrow then click keep**
 
+![image of other error](https://i.imgur.com/iiEzuHc.png)
+**If you get this click more info then run anyway**
 
 To see the list of antivirus systems that this has been deemed safe by go [here](antivirus.md)
