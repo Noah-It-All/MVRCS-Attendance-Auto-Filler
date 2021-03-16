@@ -41,12 +41,7 @@ Step 5. In the fourth line write your grade (If you're in kindergarten just writ
 Step 6. In the fifth line write what type of learning you're doing (The options are `remote` `hybrid` or `inperson` make sure to keep it all lowercase)
 
 
-Step 7. Click [this](https://github.com/Noah-It-All/MVRCS-Attendance-Auto-Filler/releases/download/1.5/Attendance.exe) to download the Attendance auto filler.
-
-
-Step 8. To run just open the exe in file explorer and double click it to run!
-
-
+A properly filled `fill.txt` should look like this
 ```
 673456
 John
@@ -54,6 +49,12 @@ Smith
 4
 hybrid
 ```
+
+
+Step 7. Click [this](https://github.com/Noah-It-All/MVRCS-Attendance-Auto-Filler/releases/download/1.5/Attendance.exe) to download the Attendance auto filler.
+
+
+Step 8. To run just open the exe in file explorer and double click it to run!
 
 
 ## If you get these errors dont panic.
