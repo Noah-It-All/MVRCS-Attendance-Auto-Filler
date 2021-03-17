@@ -109,6 +109,6 @@ driver.quit()
 root = tk.Tk()
 T = tk.Text(root, height=15, width=30)
 T.pack()
-T.insert(tk.END, "you chose:\n Powerschool Id: " + str(lineread[0]) + "\n First Name: " + str(lineread[1]) + "\n" + " Last Name: " + str(lineread[2]) + "\n Grade: " + str(lineread[3]) + "\n Date" + str(ledate) + "\n Learning Type:" + lineread[4]) + "\n"
+T.insert(tk.END, "you chose:\n Powerschool Id: " + lineread[0] + "\n First Name: " + lineread[1]+ "\n" + " Last Name: " + lineread[2] + "\n Grade: " + lineread + "\n Date" + ledate + "\n Learning Type:" + lineread[4] + "\n"
 tk.mainloop()
 
