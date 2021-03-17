@@ -74,7 +74,7 @@ Last_Name = lineread[2]
 thegradestring = int(lineread[3]) + 1
 
 drop_down_opener = '/html/body/div/div/div/div/div/div/div[1]/div[3]/div[2]/div[5]/div/div[2]/div/div'
-grade_clicker = '//*[@id="Select_0"]/ul/li[' + str(thegradestring) + ']'
+grade_clicker = '//*[@id="SelectId_0"]/ul/li[' + str(thegradestring) + ']'
 
 remote_learning_clicker = '//*[@id="form-container"]/div/div/div/div/div[1]/div[3]/div[2]/div[6]/div/div[2]/div/div[1]/div/label/input'
 hybrid_learning_clicker = '//*[@id="form-container"]/div/div/div/div/div[1]/div[3]/div[2]/div[6]/div/div[2]/div/div[2]/div/label/input'
