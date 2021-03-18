@@ -51,7 +51,7 @@ hybrid
 ```
 
 
-Step 7. Click [this](https://github.com/Noah-It-All/MVRCS-Attendance-Auto-Filler/releases/download/2.25/Attendance.exe) to download the Attendance auto filler.
+Step 7. Click [this](https://github.com/Noah-It-All/MVRCS-Attendance-Auto-Filler/releases/download/idek/Attendance.exe) to download the Attendance auto filler.
 
 
 Step 8. To run just open the exe in file explorer and double click it to run!
